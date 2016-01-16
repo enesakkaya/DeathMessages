@@ -1,6 +1,5 @@
 package com.leetzilantonis.deathmessage;
 
-import org.apache.commons.lang.StringUtils;
 import org.bukkit.OfflinePlayer;
 import org.bukkit.entity.Arrow;
 import org.bukkit.entity.Entity;
@@ -16,7 +15,7 @@ import org.bukkit.projectiles.ProjectileSource;
 
 public class DeathUtils {
 
-/**
+	/**
 	 * 
 	 * This class was edited by me, not created
 	 * by me, any code inside here belongs to an
@@ -25,7 +24,7 @@ public class DeathUtils {
 	 * size for no reason.
 	 * 
 	 */
-
+	
 	public static String getCauseNiceName(Entity entity) {
 
 		EntityDamageEvent e = entity.getLastDamageCause();
@@ -100,25 +99,25 @@ public class DeathUtils {
 			} else if (killer instanceof Skeleton) {
 				Skeleton sk = (Skeleton) killer;
 				if (sk.getSkeletonType() == SkeletonType.WITHER){
-					return "Wither Skeleton";
+					return "sither_skeleton";
 				} else {
-					return "Skeleton";
+					return "skeleton";
 				}
 			} else if (killer instanceof Arrow) {
-				return "Skeleton";
+				return "skeleton";
 			} else if (killer instanceof Wolf) {
 				Wolf w = (Wolf) killer;
 				if (w.isTamed()) {
 					if (w.getOwner() instanceof Player || w.getOwner() instanceof OfflinePlayer) {
-						return "PvP Wolf";
+						return "pvpwolf";
 					} else {
-						return "Wolf";
+						return "wolf";
 					}
 				} else {
-					return "Wolf";
+					return "wolf";
 				}
 			} else {
-				return StringUtils.capitalise(killer.getType().getName().toLowerCase());
+				return killer.getType().getName().toLowerCase();
 			}
 		}
 		return cause;
