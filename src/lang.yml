@@ -1,0 +1,126 @@
+cactusUseDefault: false
+cactus:
+- '&c{player} &7died from a cactus. We know, that''s lame.'
+- '&c{player} &7poked a cactus, but the cactus poked back.'
+- '&c{player} &7had a serious FPS &ispike &r&7after touch that cactus.'
+drowningUseDefault: false
+drowning:
+- '&c{player} &7drowned.'
+- '&c{player} &7is swimming with the fishes.'
+- '&c{player} &7took a long walk off a short pier.'
+fallUseDefault: false
+fall:
+- '&c{player} &7fell to his ultimate demise.'
+- '&c{player} &7hit the ground too hard.'
+- '&c{player} &7perished from a brutal fall.'
+- '&c{player} &7succumbed to gravity.'
+- '&c{player} &7finally experienced terminal velocity.'
+- '&c{player} &7went skydiving, forgot the parachute.'
+- '&7We''ll hold a moment of silence while we laugh at your falling death, &c{player}.'
+- '&7Attempting a high-wire stunt yet again, &c{player} &7slipped, and died.'
+- '&7Somehow tree tops are immune to gravity. &c{player} &7is not.'
+- '&7Nice going &c{player}, &7you''ve fallen. You''re in a group that includes sand,
+  and gravel - the losers of three.'
+- '&7We''re here today to mourn the loss of &c{player}&7. He is survived by his Nyan
+  Cat and Creeper statues.'
+- '&7Like everything in life, &c{player} &7chose the most average, unexciting, unadventerous
+  death - falling. Whoopie.'
+- '&7Oh man that was hard fall &c{player}&7! You ok? &c{player}&7? How many fingers
+  dude? Um, dude? Oh sh...'
+- '&c{player} &7had a whoopsie-daisy!'
+- '&c{player} &7was testing gravity. Yup, still works.'
+- '&7Although &c{player}''s &7body lies on the ground somewhere, the question stands.
+  Will it blend?'
+fireUseDefault: false
+fire:
+- '&c{player} &7burned to death.'
+- '&c{player} &7forgot how to stop, drop and roll.'
+- '&c{player} &7spontaneiously combusted, or possibly walked into fire.'
+- '&c{player} &7became a human torch. Not a very long-lasting one either.'
+- '&7Not only did you burn up &c{player}&7, but you may have started a forest fire.
+  Nice going.'
+- '&7You are not a replacement for coal, &c{player}&7. I''m not sure that even death
+  can teach you that lesson.'
+- '&7Taking himself out of the gene pool for us, &c{player} &7burned to death. Good
+  job!'
+lavaUseDefault: false
+lava:
+- '&c{player} &7was killed by lava.'
+- '&c{player} &7became obsidian.'
+- '&c{player} &7took a bath in a lake of fire.'
+- '&c{player} &7lost an entire inventory to lava. He died too, but man, loosing your
+  stuff''s a bummer!'
+- '&7I told you not to dig straight down &c{player}&7. Now look what happened.'
+- '&7Look &c{player}&7, I''m sorry I boiled you to death. I just wanted a friend.
+  No one likes me. - Your Best Buddy, Lava.'
+- '&7Then &c{player} &7said "Take my picture in front of this pit of boiling, killer
+  lava."'
+lightningUseDefault: false
+lightning:
+- '&c{player} &7was struck with a bolt of inspiration. Wait, nevermind. Lightning.'
+mobUseDefault: false
+mob:
+  zombieUseDefault: false
+  zombie:
+  - '&7Having not seen the plethora of zombie movies, &c{player} &7was amazingly unaware
+    of how to escape.'
+  - '&7Poor &c{player} &7- that zombie only wanted a hug! That''s why his arms were
+    stretched out.'
+  creeperUseDefault: false
+  creeper:
+  - '&c{player} &7was creeper bombed.'
+  - '&c{player} &7hugged a creeper.'
+  - '&7Sorry you died &c{player}&7, a creeper''s gonna creep!'
+  - '&c{player} &7was testing a new creeper-proof suit. It didn''t work.'
+  - '&c{player} &7was not involved in any explosion, nor are we able to confirm the
+    existence of the "creeper". Move along.'
+  - '&7Due to the laws of physics, the sound of a creeper explosion only reached &c{player}
+    &7after he died from it.'
+  - '&7Hell hath no fury like a creeper scorned. We drink to thy untimely end, lord
+    &c{player}&7.'
+  - '&7I''m sorry &c{player}&7, that''s the only birthday gift Creepers know how to
+    give.'
+potionUseDefault: false
+potion:
+- '&c{player} &7just learned the true power of magic.'
+- '&c{player} &7just took a potion to the face *clap* *clap*.'
+pvpUseDefault: false
+pvp:
+- '&c{player} &7was just murdered by &c{killer}&7, using &a{item}&7.'
+- '&c{player} &7died, by &c{killer}''s &a{item}.'
+- '&c{killer} &7killed &c{player} &7wielding &a{item}'
+- '&7You think it was &c{killer} &7who killed &c{player}&7? Nope, Chuck Testa.'
+- '&7It was a bitter end for &c{player}&7, but &c{killer} &7won victoriously.'
+- '&7Embarrassingly, &c{player} &7died of fright before &c{killer} &7could even raise
+  his weapon.'
+- '&c{killer} &7struck the mighty blow and ended &c{player}&7.'
+- '&c{player} &7never saw &c{killer} &7coming.'
+- '&c{killer} &7delivered the fatal blow on &c{player}&7.'
+- '&c{player}''s &7inventory now belongs to &c{killer}&7.'
+- '&c{killer} &7taught &c{player} &7the true meaning of PVP.'
+- '&7In the case of &c{player} &7v. &c{killer}&7, &c{player} &7is suing on charges
+  of voluntary manslaughter. This judge finds &c{killer} &7guilty of BEING AWESOME!'
+- '&7What is this, like death number ten for &c{player}&7? Ask &c{killer}&7.'
+starvationUseDefault: false
+starvation:
+- '&c{player} &7starved to death.'
+- '&c{player} &7starved to death. Because food is *so* hard to find.'
+suffocationUseDefault: false
+suffocation:
+- '&c{player} &7suffocated.'
+suicideUseDefault: false
+suicide:
+- '&c{player} &7killed himself.'
+- '&c{player} &7ended it all. Goodbye cruel world!'
+tntUseDefault: false
+tnt:
+- '&c{player} &7blew up.'
+- '&c{player} &7was blown to tiny bits.'
+voidUseDefault: false
+void:
+- '&c{player} &7ceased to exist. Thanks void!'
+- '&c{player} &7passed the event horizon.'
+default:
+- '&c{player} &7possibly died - we''re looking into it.'
+- '&7Nothing happened. &c{player} &7is totally ok. Why are you asking?'
+noItem: their bare hands
