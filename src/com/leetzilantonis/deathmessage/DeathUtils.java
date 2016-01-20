@@ -116,6 +116,13 @@ public class DeathUtils {
 				} else {
 					return "wolf";
 				}
+			} else if (killer instanceof Guardian) {
+				Guardian g = (Guardian)killer;
+				if (g.isElder()) {
+					return "elder_guardian";
+				} else {
+					return "guardian";
+				}
 			} else {
 				return killer.getType().getName().toLowerCase();
 			}
