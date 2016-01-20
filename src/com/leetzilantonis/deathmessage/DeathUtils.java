@@ -3,6 +3,7 @@ package com.leetzilantonis.deathmessage;
 import org.bukkit.OfflinePlayer;
 import org.bukkit.entity.Arrow;
 import org.bukkit.entity.Entity;
+import org.bukkit.entity.Guardian;
 import org.bukkit.entity.Player;
 import org.bukkit.entity.Skeleton;
 import org.bukkit.entity.Skeleton.SkeletonType;
@@ -138,8 +139,7 @@ public class DeathUtils {
 			if (wolf.isTamed()) {
 				if (wolf.getOwner() instanceof Player) {
 					owner = ((Player)wolf.getOwner()).getName();
-				}
-				if (wolf.getOwner() instanceof OfflinePlayer) {
+				} else if (wolf.getOwner() instanceof OfflinePlayer) {
 					owner = ((OfflinePlayer)wolf.getOwner()).getName();
 				}
 			}
