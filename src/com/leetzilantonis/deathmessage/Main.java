@@ -9,36 +9,42 @@ import java.util.logging.Level;
 
 import org.bukkit.configuration.file.FileConfiguration;
 import org.bukkit.configuration.file.YamlConfiguration;
+import org.bukkit.entity.Player;
 import org.bukkit.plugin.java.JavaPlugin;
 
 import com.leetzilantonis.deathmessage.commands.DMReload;
 import com.leetzilantonis.deathmessage.listeners.DeathMessageListener;
 
 public class Main extends JavaPlugin {
-	
+
 	private FileConfiguration langConfig = null;
 	private File langConfigFile = null;
-	
+
 	public double hearDistance;
-	
+
+	public StorageManager sm;
+
 	@Override
 	public void onEnable() {
-		
+
+		sm = new StorageManager(this);
+
 		DeathMessageConfig.initiateDeathMessageDefaults(this);
-		
+
 		hearDistance = this.getConfig().getDouble("hearDistance");
-		
+
 		this.getServer().getPluginManager().registerEvents(new DeathMessageListener(this), this);
 		this.getCommand("dmreload").setExecutor(new DMReload(this));
 		
 	}
-	
+
 	@Override
 	public void onDisable() {
-		
+
 		this.saveConfig();
+		this.sm.saveStorageConfig();
 		this.saveLangConfig();
-		
+
 	}
 
 	public void reloadLangConfig() {
@@ -87,5 +93,43 @@ public class Main extends JavaPlugin {
 		}
 	}
 	// End Custom Config
+
+	public void addDeath(Player p) {
+
+		int deaths = this.sm.getStorageConfig().getInt(p.getUniqueId().toString() + ".deaths", 0) + 1;
+		this.sm.getStorageConfig().set(p.getUniqueId().toString() + ".deaths", deaths);
+
+	}
+
+	public void addKill(Player p) {
+
+		int kills = this.sm.getStorageConfig().getInt(p.getUniqueId().toString() + ".kills", 0) + 1;
+		this.sm.getStorageConfig().set(p.getUniqueId().toString() + ".kills", kills);
+
+	}
+
+	public void setDeaths(Player p, int deaths) {
+
+		this.sm.getStorageConfig().set(p.getUniqueId().toString() + ".deaths", deaths);
+
+	}
+
+	public void setKills(Player p, int kills) {
+
+		this.sm.getStorageConfig().set(p.getUniqueId().toString() + ".kills", kills);
+
+	}
+
+	public int getDeaths(Player p) {
+
+		return this.sm.getStorageConfig().getInt(p.getUniqueId().toString() + ".deaths", 0);
+
+	}
+
+	public int getKills(Player p) {
+
+		return this.sm.getStorageConfig().getInt(p.getUniqueId().toString() + ".kills", 0);
+
+	}
 
 }
