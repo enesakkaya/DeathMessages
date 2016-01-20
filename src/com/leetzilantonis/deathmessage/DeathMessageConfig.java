@@ -32,6 +32,7 @@ public class DeathMessageConfig {
 		config.addDefault("tntEnabled", true);
 		config.addDefault("voidEnabled", true);
 		config.addDefault("defaultEnabled", true);
+		config.addDefault("stat", "deaths");
 
 		List<String> cactus = new ArrayList<String>();
 		cactus.add("&c{player} &7died from a cactus. We know, that's lame.");
